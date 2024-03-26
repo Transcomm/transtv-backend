@@ -1,0 +1,29 @@
+#spring:
+#  datasource:
+#    url: jdbc:postgresql://localhost:5432/transtv_db
+#    username: postgres
+#    password: 'Emaochi99'
+#    driver-class-name: org.postgresql.Driver
+#  jpa:
+#    database-platform: org.hibernate.dialect.PostgreSQLDialect
+#    database: POSTGRESQL
+#    show-sql: true
+#    hibernate:
+#      ddl-auto: update
+#  application:
+#    name: transtv
+
+spring:
+  datasource:
+    url: jdbc:postgres://gcfpqymjrhhxgb:ebd4e093d94ed4de9e5c8a524e20acf5e6675d058096aa588c92f2a957e8aaf8@ec2-44-214-132-149.compute-1.amazonaws.com:5432/d4feu7n10dft7s
+    username: gcfpqymjrhhxgb
+    password: 'ebd4e093d94ed4de9e5c8a524e20acf5e6675d058096aa588c92f2a957e8aaf8'
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  application:
+    name: transtv
