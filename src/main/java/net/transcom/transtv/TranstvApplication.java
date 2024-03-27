@@ -45,6 +45,7 @@ public class TranstvApplication implements CommandLineRunner {
 				registry.addMapping("/**")
 						.allowedOrigins("http://localhost:5173","https://kapa-client.vercel.app")
 						.allowedMethods("HEAD", "GET", "PUT", "POST", "DELETE", "PATCH")
+						.allowedHeaders("*")
 						.exposedHeaders("*");
 			}
 		};
