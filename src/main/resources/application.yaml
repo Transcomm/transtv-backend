@@ -10,6 +10,8 @@
 #    show-sql: true
 #    hibernate:
 #      ddl-auto: update
+#  jackson:
+#    time-zone: Africa/Nairobi
 #  application:
 #    name: transtv
 
@@ -25,5 +27,7 @@ spring:
     show-sql: true
     hibernate:
       ddl-auto: update
+  jackson:
+    time-zone: Africa/Nairobi
   application:
     name: transtv
