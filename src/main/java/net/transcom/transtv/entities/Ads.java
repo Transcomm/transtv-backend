@@ -1,9 +1,7 @@
 package net.transcom.transtv.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import jakarta.persistence.*;
 import lombok.Data;
 
 import java.util.Date;
@@ -15,12 +13,24 @@ public class Ads {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private Date created_at = new Date();
-    private String entity_name;
-    private String video_name;
+    @Column(name = "created_at")
+    @JsonProperty("created_at")
+    private Date createdAt = new Date();
+    @Column(name = "entity_name")
+    @JsonProperty("entity_name")
+    private String entityName;
+    @Column(name = "video_name")
+    @JsonProperty("video_name")
+    private String videoName;
+    @Column(name = "customer_id")
+    @JsonProperty("customer_id")
     private String customerId;
-    private String entity_identity;
-    private String serial_no;
+    @Column(name = "entity_identity")
+    @JsonProperty("entity_identity")
+    private String entityIdentity;
+    @Column(name = "serial_no")
+    @JsonProperty("serial_no")
+    private String serialNo;
     private String estimpressions = "33";
     private String route;
     private int latitude;
