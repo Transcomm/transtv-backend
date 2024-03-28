@@ -6,8 +6,10 @@ import net.transcom.transtv.dto.JwtAuthenticationResponse;
 import net.transcom.transtv.dto.RefreshTokenRequest;
 import net.transcom.transtv.dto.SignInRequest;
 import net.transcom.transtv.dto.SignUpRequest;
+import net.transcom.transtv.entities.LoginInfo;
 import net.transcom.transtv.entities.Role;
 import net.transcom.transtv.entities.User;
+import net.transcom.transtv.repository.LoginInfoRepository;
 import net.transcom.transtv.repository.UserRepository;
 import net.transcom.transtv.services.AuthenticationService;
 import net.transcom.transtv.services.JWTService;
@@ -26,6 +28,7 @@ public class AuthenticationServiceImpl implements AuthenticationService {
     private final PasswordEncoder passwordEncoder;
     private final AuthenticationManager authenticationManager;
     private final JWTService jwtService;
+    private final LoginInfoRepository loginInfoRepository;
 
     public User signup(SignUpRequest signUpRequest){
         User user = new User();
@@ -52,6 +55,11 @@ public class AuthenticationServiceImpl implements AuthenticationService {
 
         jwtAuthenticationResponse.setAccess(jwt);
         jwtAuthenticationResponse.setRefresh(refreshtoken);
+
+        //saving the user login records
+        LoginInfo loginInfo = new LoginInfo();
+        loginInfo.setEmail(user.getEmail());
+        loginInfoRepository.save(loginInfo);
 
         return jwtAuthenticationResponse;
     }
