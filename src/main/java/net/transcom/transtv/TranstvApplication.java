@@ -31,6 +31,7 @@ public class TranstvApplication implements CommandLineRunner {
 			user.setLastname("admin");
 			user.setEmail("admin@admin.com");
 			user.setRole(Role.ADMIN);
+			user.setClient("ADMIN");
 			user.setPassword(new BCryptPasswordEncoder().encode("password"));
 
 			userRepository.save(user);
@@ -43,7 +44,7 @@ public class TranstvApplication implements CommandLineRunner {
 			@Override
 			public void addCorsMappings(CorsRegistry registry){
 				registry.addMapping("/**")
-						.allowedOrigins("http://localhost:5173","https://kapa-client.vercel.app")
+						.allowedOrigins("http://localhost:5173","https://kapa-client.vercel.app","https://transtv.vercel.app")
 						.allowedMethods("HEAD", "GET", "PUT", "POST", "DELETE", "PATCH")
 						.allowedHeaders("*")
 						.exposedHeaders("*");

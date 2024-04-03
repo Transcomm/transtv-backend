@@ -23,13 +23,33 @@ public class AdsServiceImpl implements AdsService {
         return adsRepository.save(ads);
     }
 
-    public Page<Ads> getLatestAdsByStatus(String status, int page, int size) {
+    public Page<Ads> getLatestAdsByStatus(String status, String client, int page, int size) {
         Pageable pageable = PageRequest.of(page, size, Sort.by("createdAt").descending());
-        return adsRepository.findByStatusOrderByCreatedAtDesc(status, pageable);
+        return adsRepository.findByStatusAndCustomerIdOrderByCreatedAtDesc(status,client,pageable);
     }
 
-    public List<String> getListOfMatatus(){
-        return adsRepository.findDistinctByEntityName();
+    public List<String> getListOfMatatus(String status, String client){
+        return adsRepository.findDistinctByEntityName(status,client);
+    }
+
+//    public List<Object[]> getAdsByLast7Days(String status){
+//        return adsRepository.findAdCountByLast7Days(status);
+//    }
+
+    public List<Object[]> getAdsByRoute(String status, String client){
+        return adsRepository.findAdCountByRoute(status, client);
+    }
+
+    public List<Object[]> getAdsByVideoName(String status, String client){
+        return adsRepository.findAdCountByVideoName(status, client);
+    }
+
+    public List<Object[]> getAdsByMatatu(String status, String client){
+        return adsRepository.findAdCountByMatatu(status, client);
+    }
+
+    public List<Object[]> getAdsByDays(String status, String client){
+        return adsRepository.findAdCountByDay(status, client);
     }
 
 }
