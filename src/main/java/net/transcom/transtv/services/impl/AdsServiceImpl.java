@@ -10,6 +10,8 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 @Service
@@ -28,13 +30,23 @@ public class AdsServiceImpl implements AdsService {
         return adsRepository.findByStatusAndCustomerIdOrderByCreatedAtDesc(status,client,pageable);
     }
 
+    public List<Ads> getAllAds(String status, String client){
+        return adsRepository.findByStatusAndCustomerIdOrderByCreatedAtDesc(status, client);
+    }
+
     public List<String> getListOfMatatus(String status, String client){
         return adsRepository.findDistinctByEntityName(status,client);
     }
 
-//    public List<Object[]> getAdsByLast7Days(String status){
-//        return adsRepository.findAdCountByLast7Days(status);
-//    }
+    public List<Object[]> getAdsByLast7Days(String status, String client){
+        Calendar endDate = Calendar.getInstance();
+        endDate.setTime(new Date());
+
+        Calendar startDate = Calendar.getInstance();
+        startDate.setTime(endDate.getTime());
+        startDate.add(Calendar.DAY_OF_MONTH, -6); // 7 days ago
+        return adsRepository.findAdCountByLast7Days(status, client, startDate.getTime(), endDate.getTime());
+    }
 
     public List<Object[]> getAdsByRoute(String status, String client){
         return adsRepository.findAdCountByRoute(status, client);

@@ -58,10 +58,15 @@ public class UserController {
         return ResponseEntity.ok(adsService.getAdsByVideoName(status, client));
     }
 
-//    @GetMapping("/advs7days")
-//    public ResponseEntity<List<Object[]>> getAdsvs7days(@RequestParam String status){
-//        return ResponseEntity.ok(adsService.getAdsByLast7Days(status));
-//    }
+    @GetMapping("/advs7days")
+    public ResponseEntity<List<Object[]>> getAdsvs7days(@RequestParam String status, @RequestParam String client){
+        return ResponseEntity.ok(adsService.getAdsByLast7Days(status, client));
+    }
+
+    @GetMapping("/adcsv")
+    public ResponseEntity<List<Ads>> getAllAds(@RequestParam String status, @RequestParam String client){
+        return ResponseEntity.ok(adsService.getAllAds(status, client));
+    }
 
     @GetMapping("/adsvsdays")
     public ResponseEntity<List<Object[]>> getAdsvsDays(@RequestParam String status, @RequestParam String client){

@@ -9,8 +9,9 @@ public interface AdsService{
 
     Ads saveAd(Ads ads);
     Page<Ads> getLatestAdsByStatus(String status, String client, int page, int size);
+    List<Ads> getAllAds(String status, String client);
     List<String> getListOfMatatus(String status, String client);
-//    List<Object[]> getAdsByLast7Days(String status);
+    List<Object[]> getAdsByLast7Days(String status, String client);
     List<Object[]> getAdsByRoute(String status, String client);
     List<Object[]> getAdsByVideoName(String status, String client);
     List<Object[]> getAdsByMatatu(String status, String client);
