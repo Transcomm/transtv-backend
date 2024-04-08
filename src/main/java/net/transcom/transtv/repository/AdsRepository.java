@@ -19,7 +19,7 @@ public interface AdsRepository extends JpaRepository<Ads, Long> {
     List<String> findDistinctByEntityName(@Param("status") String status, @Param("client") String client);
     @Query("SELECT DATE(a.createdAt) AS day, COUNT(a.id) AS count FROM Ads a WHERE status = :status AND customerId = :client GROUP BY day ORDER BY day DESC")
     List<Object[]> findAdCountByDay(@Param("status") String status, @Param("client") String client);
-    @Query("SELECT DATE(a.createdAt) AS day, COUNT(a.id) AS count FROM Ads a WHERE status = :status AND customerId = :client AND a.createdAt BETWEEN :startDate AND :endDate GROUP BY day ORDER BY day DESC")
+    @Query("SELECT DATE(a.createdAt) AS day, COUNT(a.id) AS count FROM Ads a WHERE status = :status AND customerId = :client AND a.createdAt BETWEEN :startDate AND :endDate GROUP BY day ORDER BY day ASC")
     List<Object[]> findAdCountByLast7Days(@Param("status") String status, @Param("client") String client, @Param("startDate")Date startDate, @Param("endDate")Date endDate);
     @Query("SELECT a.route AS route, COUNT(a.id) AS count FROM Ads a WHERE status = :status AND customerId = :client GROUP BY route")
     List<Object[]> findAdCountByRoute(@Param("status") String status, @Param("client") String client);
