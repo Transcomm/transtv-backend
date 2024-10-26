@@ -1,33 +1,31 @@
 #spring:
 #  datasource:
-#    url: jdbc:postgresql://localhost:5432/transtv_db
-#    username: postgres
-#    password: 'Emaochi99'
-#    driver-class-name: org.postgresql.Driver
+#    url: jdbc:mysql://localhost:3306/trans_tv_db
+#    username: root
+#    password: ''
+#    driver-class-name: com.mysql.cj.jdbc.Driver
 #  jpa:
-#    database-platform: org.hibernate.dialect.PostgreSQLDialect
-#    database: POSTGRESQL
+#    database-platform: org.hibernate.dialect.MySQLDialect
+#    database: MYSQL
 #    show-sql: true
 #    hibernate:
 #      ddl-auto: update
-#  jackson:
-#    time-zone: Africa/Nairobi
 #  application:
-#    name: transtv
+#    name: trans-tv
 
 spring:
   datasource:
-    url: jdbc:postgres://gcfpqymjrhhxgb:ebd4e093d94ed4de9e5c8a524e20acf5e6675d058096aa588c92f2a957e8aaf8@ec2-44-214-132-149.compute-1.amazonaws.com:5432/d4feu7n10dft7s
-    username: gcfpqymjrhhxgb
-    password: 'ebd4e093d94ed4de9e5c8a524e20acf5e6675d058096aa588c92f2a957e8aaf8'
-    driver-class-name: org.postgresql.Driver
+    url: jdbc:mysql://l1zc8re44lur4pg2:kjcd50u76o23mn1a@z8dl7f9kwf2g82re.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/io51g48r9q59h3r2
+    username: l1zc8re44lur4pg2
+    password: 'kjcd50u76o23mn1a'
+    driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
-    database-platform: org.hibernate.dialect.PostgreSQLDialect
-    database: POSTGRESQL
+    database-platform: org.hibernate.dialect.MySQLDialect
+    database: MYSQL
     show-sql: true
     hibernate:
       ddl-auto: update
   jackson:
     time-zone: Africa/Nairobi
   application:
-    name: transtv
+    name: trans-tv

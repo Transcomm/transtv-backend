@@ -10,5 +10,6 @@ public class SignUpRequest {
     private String email;
     private String client;
     private String password;
+    private String orgName;
 
 }

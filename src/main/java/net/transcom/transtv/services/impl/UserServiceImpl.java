@@ -20,6 +20,7 @@ public class UserServiceImpl implements UserService {
     private final JWTService jwtService;
 
     public UserResponse getInfo(String authtoken){
+
         String userEmail = jwtService.extractUsername(authtoken);
         //get the user from the database
         User user = userRepository.findByEmail(userEmail).orElseThrow(() -> new IllegalArgumentException("User not found"));
