@@ -29,7 +29,11 @@ public class ScheduleAdSim {
                 new Ads("NO FEAR", "Rina TVC", "20", "KDN 101K", "KDN 101K", "31", "CBD,KARIKOR JUJA PUMWANI, DANDORA", 0, 0, false, true, "sim"),
                 new Ads("SQUID GAME", "Rina TVC", "20", "KDH 049C", "KDH 049C", "31", "JOGOO RD MOMBASA RD THINK", 0, 0, false, true, "sim"),
                 new Ads("WAVE 2", "Rina TVC", "20", "KCD 844E", "KCD 844E", "31", "CBD LANG'ATA NGONG WAIYAKI WAY", 0, 0, false, true, "sim"),
-                new Ads("PUDDING", "Rina TVC", "20", "KDH 304C", "KDH 304C", "31", "CBD,KARIKOR JUJA PUMWANI, DANDORA", 0, 0, false, true, "sim")
+                new Ads("PUDDING", "Rina TVC", "20", "KDH 304C", "KDH 304C", "31", "CBD,KARIKOR JUJA PUMWANI, DANDORA", 0, 0, false, true, "sim"),
+                new Ads("BACK LASH", "Rina TVC", "20", "KDC 279N", "KDC 279N", "31", "CBD,KARIKOR JUJA PUMWANI, DANDORA", 0, 0, false, true, "sim"),
+                new Ads("BIG CHIEF", "Rina TVC", "20", "KDA 067D", "KDA 067D", "31", "CBD,KARIKOR JUJA PUMWANI, DANDORA", 0, 0, false, true, "sim"),
+                new Ads("BLACK MARKET", "Rina TVC", "20", "KCR 328A", "KCR 328A", "31", "CBD,KARIKOR JUJA PUMWANI, DANDORA", 0, 0, false, true, "sim"),
+                new Ads("VOICE MAIL", "Rina TVC", "20", "KDD 001L", "KDD 001L", "31", "CBD,KARIKOR JUJA PUMWANI, DANDORA", 0, 0, false, true, "sim")
         );
 
         adsRepository.saveAll(dataList);
