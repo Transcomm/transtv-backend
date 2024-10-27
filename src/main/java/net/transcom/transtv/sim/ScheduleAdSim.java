@@ -27,7 +27,9 @@ public class ScheduleAdSim {
                 new Ads("WAVE 1", "Rina TVC", "20", "KDA 087L", "KDA 087L", "31", "CBD LANG'ATA NGONG RD NGO", 0, 0, false, true, "sim"),
                 new Ads("G-UNIT", "Rina TVC", "20", "KDN 267J", "KDN 267J", "31", "EMBAKASI CBD MOMBASA RD", 0, 0, false, true, "sim"),
                 new Ads("NO FEAR", "Rina TVC", "20", "KDN 101K", "KDN 101K", "31", "CBD,KARIKOR JUJA PUMWANI, DANDORA", 0, 0, false, true, "sim"),
-                new Ads("SQUID GAME", "Rina TVC", "20", "KDH 049C", "KDH 049C", "31", "JOGOO RD MOMBASA RD THINK", 0, 0, false, true, "sim")
+                new Ads("SQUID GAME", "Rina TVC", "20", "KDH 049C", "KDH 049C", "31", "JOGOO RD MOMBASA RD THINK", 0, 0, false, true, "sim"),
+                new Ads("WAVE 2", "Rina TVC", "20", "KCD 844E", "KCD 844E", "31", "CBD LANG'ATA NGONG WAIYAKI WAY", 0, 0, false, true, "sim"),
+                new Ads("PUDDING", "Rina TVC", "20", "KDH 304C", "KDH 304C", "31", "CBD,KARIKOR JUJA PUMWANI, DANDORA", 0, 0, false, true, "sim")
         );
 
         adsRepository.saveAll(dataList);
