@@ -31,7 +31,7 @@ public class Ads {
     @Column(name = "serial_no")
     @JsonProperty("serial_no")
     private String serialNo;
-    private String estimpressions = "33";
+    private String estimpressions;
     private String route;
     private int latitude;
     private int longitude;
@@ -39,4 +39,21 @@ public class Ads {
     private boolean active;
     private String status;
 
+    // Parameterized constructor
+    public Ads(String entityName, String videoName, String customerId, String entityIdentity,
+                         String serialNo, String estimpressions, String route, int latitude,
+                         int longitude, boolean deleted, boolean active, String status) {
+        this.entityName = entityName;
+        this.videoName = videoName;
+        this.customerId = customerId;
+        this.entityIdentity = entityIdentity;
+        this.serialNo = serialNo;
+        this.estimpressions = estimpressions;
+        this.route = route;
+        this.latitude = latitude;
+        this.longitude = longitude;
+        this.deleted = deleted;
+        this.active = active;
+        this.status = status;
+    }
 }

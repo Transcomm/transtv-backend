@@ -1,16 +1,36 @@
-//package net.transcom.transtv.sim;
-//
-//import org.springframework.scheduling.annotation.EnableScheduling;
-//import org.springframework.scheduling.annotation.Scheduled;
-//import org.springframework.stereotype.Component;
-//
-//@Component
-//@EnableScheduling
-//public class ScheduleAdSim {
-//    // Execute at 15th, 30th, 45th, and 0th minutes of every hour
-//    @Scheduled(cron = "0 15,30,45,0 * * * *")
-//    public void executeTask() {
-//        // Your task logic here
-//        System.out.println("Task executed at 15th, 30th, 45th, and 0th minutes of every hour");
-//    }
-//}
+package net.transcom.transtv.sim;
+
+import lombok.RequiredArgsConstructor;
+import lombok.extern.log4j.Log4j2;
+import net.transcom.transtv.entities.Ads;
+import net.transcom.transtv.repository.AdsRepository;
+import org.springframework.scheduling.annotation.EnableScheduling;
+import org.springframework.scheduling.annotation.Scheduled;
+import org.springframework.stereotype.Component;
+
+import java.util.Arrays;
+import java.util.List;
+
+@Component
+@EnableScheduling
+@RequiredArgsConstructor
+@Log4j2
+public class ScheduleAdSim {
+
+    private final AdsRepository adsRepository;
+
+    // Scheduled to run at 15, 30, 45, and 00 minutes of each hour between 04:00 and 22:00
+    @Scheduled(cron = "0 0,15,30,45 4-21 * * *")
+    public void executeTask() {
+        List<Ads> dataList = Arrays.asList(
+                new Ads("FUNKADELICA", "Rina TVC", "20", "KDK 983A", "KDK 983A", "31", "CBD, MOMBASA RD, JOGOO RD", 0, 0, false, true, "sim"),
+                new Ads("WAVE 1", "Rina TVC", "20", "KDA 087L", "KDA 087L", "31", "CBD LANG'ATA NGONG RD NGO", 0, 0, false, true, "sim"),
+                new Ads("G-UNIT", "Rina TVC", "20", "KDN 267J", "KDN 267J", "31", "EMBAKASI CBD MOMBASA RD", 0, 0, false, true, "sim"),
+                new Ads("NO FEAR", "Rina TVC", "20", "KDN 101K", "KDN 101K", "31", "CBD,KARIKOR JUJA PUMWANI, DANDORA", 0, 0, false, true, "sim"),
+                new Ads("SQUID GAME", "Rina TVC", "20", "KDH 049C", "KDH 049C", "31", "JOGOO RD MOMBASA RD THINK", 0, 0, false, true, "sim")
+        );
+
+        adsRepository.saveAll(dataList);
+        log.info("Data saved at: " + System.currentTimeMillis());
+    }
+}
