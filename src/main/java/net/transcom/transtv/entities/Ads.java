@@ -39,6 +39,10 @@ public class Ads {
     private boolean active;
     private String status;
 
+    // No-argument constructor
+    public Ads() {
+    }
+
     // Parameterized constructor
     public Ads(String entityName, String videoName, String customerId, String entityIdentity,
                          String serialNo, String estimpressions, String route, int latitude,
