@@ -44,7 +44,7 @@ public class TranstvApplication implements CommandLineRunner {
 			@Override
 			public void addCorsMappings(CorsRegistry registry){
 				registry.addMapping("/**")
-						.allowedOrigins("http://localhost:5173","https://kapa-client.vercel.app","https://transtv.vercel.app")
+						.allowedOrigins("http://localhost:5173","https://kapa-client.vercel.app","https://transtv.vercel.app", "https://transwifi-client.vercel.app")
 						.allowedMethods("HEAD", "GET", "PUT", "POST", "DELETE", "PATCH")
 						.allowedHeaders("*")
 						.exposedHeaders("*");
