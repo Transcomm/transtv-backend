@@ -53,7 +53,6 @@ public class ScheduleAdSim {
                 new Ads("BUMAYE", "Girl Effect TVC", "22", "KDA 067D", "KDA 067D", "31", "THIKA ROAD", 0, 0, false, true, "sim"),
                 new Ads("G-UNIT", "Girl Effect TVC", "22", "KDD 001L", "KDD 001L", "31", "THIKA ROAD", 0, 0, false, true, "sim"),
                 new Ads("ELSABROSA", "Girl Effect TVC", "22", "KDB 037E", "KDB 037E", "31", "THIKA ROAD", 0, 0, false, true, "sim"),
-                new Ads("OPPOSITE", "Girl Effect TVC", "22", "KDH 112E", "KDH 112E", "31", "NGONG ROAD", 0, 0, false, true, "sim"),
                 new Ads("QUEENTA", "Girl Effect TVC", "22", "KCW 079R", "KCW 079R", "31", "NGONG ROAD", 0, 0, false, true, "sim"),
                 new Ads("BIONIC", "Girl Effect TVC", "22", "KDK 063K", "KDK 063K", "31", "NGONG ROAD", 0, 0, false, true, "sim"),
                 new Ads("BVB", "Girl Effect TVC", "22", "KDK 216U", "KDK 216U", "31", "NGONG ROAD", 0, 0, false, true, "sim"),
