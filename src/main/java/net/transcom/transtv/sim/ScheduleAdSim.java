@@ -40,7 +40,25 @@ public class ScheduleAdSim {
                 new Ads("BIONIC", "Rina TVC", "20", "KDK 063K", "KDK 063K", "31", "NGONG ROAD", 0, 0, false, true, "sim"),
                 new Ads("BVB", "Rina TVC", "20", "KDK 216U", "KDK 216U", "31", "NGONG ROAD", 0, 0, false, true, "sim"),
                 new Ads("AMBUSH", "Rina TVC", "20", "KDG 195K", "KDG 195K", "31", "NGONG ROAD", 0, 0, false, true, "sim"),
-                new Ads("ISSACHAR", "Rina TVC", "20", "KDM 117M", "KDM 117M", "31", "THIKA ROAD", 0, 0, false, true, "sim")
+                new Ads("ISSACHAR", "Rina TVC", "20", "KDM 117M", "KDM 117M", "31", "THIKA ROAD", 0, 0, false, true, "sim"),
+
+                // Girl Effect
+                new Ads("FUNKADELICA", "Girl Effect TVC", "22", "KDK 983A", "KDK 983A", "31", "JOGOO ROAD", 0, 0, false, true, "sim"),
+                new Ads("STEAMPUNK", "Girl Effect TVC", "22", "KDA 087L", "KDA 087L", "31", "JOGOO ROAD", 0, 0, false, true, "sim"),
+                new Ads("DROID", "Girl Effect TVC", "22", "KDN 267J", "KDN 267J", "31", "JOGOO ROAD", 0, 0, false, true, "sim"),
+                new Ads("SQUID GAME", "Girl Effect TVC", "22", "KDH 049C", "KDH 049C", "31", "LANGATA ROAD", 0, 0, false, true, "sim"),
+                new Ads("B0YKA", "Girl Effect TVC", "22", "KCD 844E", "KCD 844E", "31", "LANGATA ROAD", 0, 0, false, true, "sim"),
+                new Ads("WAVE 1", "Girl Effect TVC", "22", "KDH 304C", "KDH 304C", "31", "LANGATA ROAD", 0, 0, false, true, "sim"),
+                new Ads("FORTUNE", "Girl Effect TVC", "22", "KDC 279N", "KDC 279N", "31", "LANGATA ROAD", 0, 0, false, true, "sim"),
+                new Ads("BUMAYE", "Girl Effect TVC", "22", "KDA 067D", "KDA 067D", "31", "THIKA ROAD", 0, 0, false, true, "sim"),
+                new Ads("G-UNIT", "Girl Effect TVC", "22", "KDD 001L", "KDD 001L", "31", "THIKA ROAD", 0, 0, false, true, "sim"),
+                new Ads("ELSABROSA", "Girl Effect TVC", "22", "KDB 037E", "KDB 037E", "31", "THIKA ROAD", 0, 0, false, true, "sim"),
+                new Ads("OPPOSITE", "Girl Effect TVC", "22", "KDH 112E", "KDH 112E", "31", "NGONG ROAD", 0, 0, false, true, "sim"),
+                new Ads("QUEENTA", "Girl Effect TVC", "22", "KCW 079R", "KCW 079R", "31", "NGONG ROAD", 0, 0, false, true, "sim"),
+                new Ads("BIONIC", "Girl Effect TVC", "22", "KDK 063K", "KDK 063K", "31", "NGONG ROAD", 0, 0, false, true, "sim"),
+                new Ads("BVB", "Girl Effect TVC", "22", "KDK 216U", "KDK 216U", "31", "NGONG ROAD", 0, 0, false, true, "sim"),
+                new Ads("FROOTY", "Girl Effect TVC", "22", "KDG 195K", "KDG 195K", "31", "NGONG ROAD", 0, 0, false, true, "sim"),
+                new Ads("ISSACHAR", "Girl Effect TVC", "22", "KDM 117M", "KDM 117M", "31", "THIKA ROAD", 0, 0, false, true, "sim")
 
         );
 
