@@ -24,23 +24,23 @@ public class ScheduleAdSim {
     public void executeTask() {
         List<Ads> dataList = Arrays.asList(
 
-                new Ads("BVB", "COOP_BANK_FASHION", "24", "KDK 983A", "KDK 983A", "31", "NGONG ROAD", 0, 0, false, true, "sim"),
-                new Ads("BUMAYE", "COOP_BANK_FASHION", "24", "KDA 087L", "KDA 087L", "31", "NGONG ROAD", 0, 0, false, true, "sim"),
-                new Ads("G-UNIT", "COOP_BANK_FASHION", "24", "KDN 267J", "KDN 267J", "31", "MOMBASA ROAD", 0, 0, false, true, "sim"),
-                new Ads("ISSACHAR", "COOP_BANK_FASHION", "24", "KDN 101K", "KDN 101K", "31", "JOGOO ROAD", 0, 0, false, true, "sim"),
-                new Ads("DROID", "COOP_BANK_FASHION", "24", "KDH 049C", "KDH 049C", "31", "MOMBASA ROAD", 0, 0, false, true, "sim"),
-
-                new Ads("BVB", "COOP_BANK_FLOWER", "24", "KDK 983A", "KDK 983A", "31", "NGONG ROAD", 0, 0, false, true, "sim"),
-                new Ads("BUMAYE", "COOP_BANK_FLOWER", "24", "KDA 087L", "KDA 087L", "31", "NGONG ROAD", 0, 0, false, true, "sim"),
-                new Ads("G-UNIT", "COOP_BANK_FLOWER", "24", "KDN 267J", "KDN 267J", "31", "MOMBASA ROAD", 0, 0, false, true, "sim"),
-                new Ads("ISSACHAR", "COOP_BANK_FLOWER", "24", "KDN 101K", "KDN 101K", "31", "JOGOO ROAD", 0, 0, false, true, "sim"),
-                new Ads("DROID", "COOP_BANK_FLOWER", "24", "KDH 049C", "KDH 049C", "31", "MOMBASA ROAD", 0, 0, false, true, "sim"),
-
-                new Ads("BVB", "COOP_BANK_DJ", "24", "KDK 983A", "KDK 983A", "31", "NGONG ROAD", 0, 0, false, true, "sim"),
-                new Ads("BUMAYE", "COOP_BANK_DJ", "24", "KDA 087L", "KDA 087L", "31", "NGONG ROAD", 0, 0, false, true, "sim"),
-                new Ads("G-UNIT", "COOP_BANK_DJ", "24", "KDN 267J", "KDN 267J", "31", "MOMBASA ROAD", 0, 0, false, true, "sim"),
-                new Ads("ISSACHAR", "COOP_BANK_DJ", "24", "KDN 101K", "KDN 101K", "31", "JOGOO ROAD", 0, 0, false, true, "sim"),
-                new Ads("DROID", "COOP_BANK_DJ", "24", "KDH 049C", "KDH 049C", "31", "MOMBASA ROAD", 0, 0, false, true, "sim"),
+//                new Ads("BVB", "COOP_BANK_FASHION", "24", "KDK 983A", "KDK 983A", "31", "NGONG ROAD", 0, 0, false, true, "sim"),
+//                new Ads("BUMAYE", "COOP_BANK_FASHION", "24", "KDA 087L", "KDA 087L", "31", "NGONG ROAD", 0, 0, false, true, "sim"),
+//                new Ads("G-UNIT", "COOP_BANK_FASHION", "24", "KDN 267J", "KDN 267J", "31", "MOMBASA ROAD", 0, 0, false, true, "sim"),
+//                new Ads("ISSACHAR", "COOP_BANK_FASHION", "24", "KDN 101K", "KDN 101K", "31", "JOGOO ROAD", 0, 0, false, true, "sim"),
+//                new Ads("DROID", "COOP_BANK_FASHION", "24", "KDH 049C", "KDH 049C", "31", "MOMBASA ROAD", 0, 0, false, true, "sim"),
+//
+//                new Ads("BVB", "COOP_BANK_FLOWER", "24", "KDK 983A", "KDK 983A", "31", "NGONG ROAD", 0, 0, false, true, "sim"),
+//                new Ads("BUMAYE", "COOP_BANK_FLOWER", "24", "KDA 087L", "KDA 087L", "31", "NGONG ROAD", 0, 0, false, true, "sim"),
+//                new Ads("G-UNIT", "COOP_BANK_FLOWER", "24", "KDN 267J", "KDN 267J", "31", "MOMBASA ROAD", 0, 0, false, true, "sim"),
+//                new Ads("ISSACHAR", "COOP_BANK_FLOWER", "24", "KDN 101K", "KDN 101K", "31", "JOGOO ROAD", 0, 0, false, true, "sim"),
+//                new Ads("DROID", "COOP_BANK_FLOWER", "24", "KDH 049C", "KDH 049C", "31", "MOMBASA ROAD", 0, 0, false, true, "sim"),
+//
+//                new Ads("BVB", "COOP_BANK_DJ", "24", "KDK 983A", "KDK 983A", "31", "NGONG ROAD", 0, 0, false, true, "sim"),
+//                new Ads("BUMAYE", "COOP_BANK_DJ", "24", "KDA 087L", "KDA 087L", "31", "NGONG ROAD", 0, 0, false, true, "sim"),
+//                new Ads("G-UNIT", "COOP_BANK_DJ", "24", "KDN 267J", "KDN 267J", "31", "MOMBASA ROAD", 0, 0, false, true, "sim"),
+//                new Ads("ISSACHAR", "COOP_BANK_DJ", "24", "KDN 101K", "KDN 101K", "31", "JOGOO ROAD", 0, 0, false, true, "sim"),
+//                new Ads("DROID", "COOP_BANK_DJ", "24", "KDH 049C", "KDH 049C", "31", "MOMBASA ROAD", 0, 0, false, true, "sim"),
 
                 new Ads("BVB", "CHROME TVC", "25", "KDK 983A", "KDK 983A", "31", "THIKA ROAD", 0, 0, false, true, "sim"),
                 new Ads("BUMAYE", "CHROME TVC", "25", "KDA 087L", "KDA 087L", "31", "JOGOO ROAD", 0, 0, false, true, "sim"),
