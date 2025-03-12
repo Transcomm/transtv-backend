@@ -45,7 +45,7 @@ public class ScheduleAdSim {
                 new Ads("BVB", "CHROME TVC", "25", "KDK 983A", "KDK 983A", "31", "LANGATA ROAD", 0, 0, false, true, "sim"),
                 new Ads("EXPRESSO", "CHROME TVC", "25", "KDA 087L", "KDA 087L", "31", "NGONG/THIKA ROAD", 0, 0, false, true, "sim"),
                 new Ads("G-UNIT", "CHROME TVC", "25", "KDN 267J", "KDN 267J", "31", "KIAMBU ROAD", 0, 0, false, true, "sim"),
-                new Ads("INVISIBLE", "CHROME TVC", "25", "KDN 101K", "KDN 101K", "31", "WAIYAKI ROAD", 0, 0, false, true, "sim"),
+                new Ads("INVISIBLE", "CHROME TVC", "25", "KDN 101K", "KDN 101K", "31", "WAIYAKI WAY", 0, 0, false, true, "sim"),
                 new Ads("DRUID", "CHROME TVC", "25", "KDH 049C", "KDH 049C", "31", "MOMBASA ROAD", 0, 0, false, true, "sim")
         );
 
