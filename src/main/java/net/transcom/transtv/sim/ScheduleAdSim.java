@@ -20,7 +20,7 @@ public class ScheduleAdSim {
     private final AdsRepository adsRepository;
 
     // Scheduled to run at 15, 30, 45, and 00 minutes of each hour between 04:00 and 22:00
-    @Scheduled(cron = "0 0,15,30,45 4-21 * * *")
+    @Scheduled(cron = "0 0,15,30,45 17-21 * * *")
     public void executeTask() {
         List<Ads> dataList = Arrays.asList(
 
