@@ -20,15 +20,15 @@ public class ScheduleAdSim {
     private final AdsRepository adsRepository;
 
     // Scheduled to run at 15, 30, 45, and 00 minutes of each hour between 04:00 and 22:00
-    @Scheduled(cron = "0 0,15,30,45 17-23 * * *")
+    @Scheduled(cron = "0 0,15,30,45 05-23 * * *")
     public void executeTask() {
         List<Ads> dataList = Arrays.asList(
 
-//                new Ads("BVB", "COOP_BANK_FASHION", "24", "KDK 983A", "KDK 983A", "31", "NGONG ROAD", 0, 0, false, true, "sim"),
-//                new Ads("BUMAYE", "COOP_BANK_FASHION", "24", "KDA 087L", "KDA 087L", "31", "NGONG ROAD", 0, 0, false, true, "sim"),
-//                new Ads("G-UNIT", "COOP_BANK_FASHION", "24", "KDN 267J", "KDN 267J", "31", "MOMBASA ROAD", 0, 0, false, true, "sim"),
-//                new Ads("ISSACHAR", "COOP_BANK_FASHION", "24", "KDN 101K", "KDN 101K", "31", "JOGOO ROAD", 0, 0, false, true, "sim"),
-//                new Ads("DROID", "COOP_BANK_FASHION", "24", "KDH 049C", "KDH 049C", "31", "MOMBASA ROAD", 0, 0, false, true, "sim"),
+                new Ads("FUNKADELICA", "USIKIMYE", "26", "KDK 983A", "KDK 983A", "31", "NGONG ROAD", 0, 0, false, true, "sim"),
+                new Ads("BVB", "USIKIMYE", "26", "KDA 087L", "KDA 087L", "31", "JOGOO ROAD", 0, 0, false, true, "sim"),
+                new Ads("G-UNIT", "USIKIMYE", "26", "KDN 267J", "KDN 267J", "31", "JOGOO ROAD", 0, 0, false, true, "sim"),
+                new Ads("FORTUNE", "USIKIMYE", "26", "KDN 101K", "KDN 101K", "31", "NGONG ROAD", 0, 0, false, true, "sim"),
+                new Ads("DRUID", "USIKIMYE", "26", "KDH 049C", "KDH 049C", "31", "THIKA ROAD", 0, 0, false, true, "sim"),
 //
 //                new Ads("BVB", "COOP_BANK_FLOWER", "24", "KDK 983A", "KDK 983A", "31", "NGONG ROAD", 0, 0, false, true, "sim"),
 //                new Ads("BUMAYE", "COOP_BANK_FLOWER", "24", "KDA 087L", "KDA 087L", "31", "NGONG ROAD", 0, 0, false, true, "sim"),
