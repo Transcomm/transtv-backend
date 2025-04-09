@@ -25,8 +25,8 @@ public class ScheduleAdSim {
         List<Ads> dataList = Arrays.asList(
 
                 new Ads("FUNKADELICA", "USIKIMYE", "26", "KDK 983A", "KDK 983A", "31", "NGONG ROAD", 0, 0, false, true, "sim"),
-                new Ads("BVB", "USIKIMYE", "26", "KDA 087L", "KDA 087L", "31", "JOGOO ROAD", 0, 0, false, true, "sim"),
-                new Ads("G-UNIT", "USIKIMYE", "26", "KDN 267J", "KDN 267J", "31", "JOGOO ROAD", 0, 0, false, true, "sim"),
+                new Ads("BVB", "USIKIMYE", "26", "KDA 087L", "KDA 087L", "31", "JOGOO/OUTERING ROAD", 0, 0, false, true, "sim"),
+                new Ads("G-UNIT", "USIKIMYE", "26", "KDN 267J", "KDN 267J", "31", "JOGOO/OUTERING ROAD", 0, 0, false, true, "sim"),
                 new Ads("FORTUNE", "USIKIMYE", "26", "KDN 101K", "KDN 101K", "31", "NGONG ROAD", 0, 0, false, true, "sim"),
                 new Ads("DRUID", "USIKIMYE", "26", "KDH 049C", "KDH 049C", "31", "THIKA ROAD", 0, 0, false, true, "sim"),
 //
