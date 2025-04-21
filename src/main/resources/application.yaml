@@ -15,9 +15,9 @@
 
 spring:
   datasource:
-    url: jdbc:mysql://l1zc8re44lur4pg2:kjcd50u76o23mn1a@z8dl7f9kwf2g82re.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/io51g48r9q59h3r2
-    username: l1zc8re44lur4pg2
-    password: 'kjcd50u76o23mn1a'
+    url: jdbc:mysql://y01wtaqxwxcbx9m8:bj4p2plf2wg6dxdm@jfrpocyduwfg38kq.chr7pe7iynqr.eu-west-1.rds.amazonaws.com:3306/neauurdg3e9egqdj
+    username: y01wtaqxwxcbx9m8
+    password: 'bj4p2plf2wg6dxdm'
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     database-platform: org.hibernate.dialect.MySQLDialect
