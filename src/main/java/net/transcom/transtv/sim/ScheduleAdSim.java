@@ -30,11 +30,11 @@ public class ScheduleAdSim {
 //                new Ads("FORTUNE", "USIKIMYE", "26", "KDN 101K", "KDN 101K", "31", "NGONG ROAD", 0, 0, false, true, "sim"),
 //                new Ads("DRUID", "USIKIMYE", "26", "KDH 049C", "KDH 049C", "31", "THIKA ROAD", 0, 0, false, true, "sim"),
 
-                new Ads("FUNKADELICA", "KRA", "27", "KDK 983A", "KDK 983A", "31", "NGONG ROAD", 0, 0, false, true, "sim"),
-                new Ads("BVB", "KRA", "27", "KDA 087L", "KDA 087L", "31", "JOGOO/OUTERING ROAD", 0, 0, false, true, "sim"),
-                new Ads("G-UNIT", "KRA", "27", "KDN 267J", "KDN 267J", "31", "JOGOO/OUTERING ROAD", 0, 0, false, true, "sim"),
-                new Ads("FORTUNE", "KRA", "27", "KDN 101K", "KDN 101K", "31", "NGONG ROAD", 0, 0, false, true, "sim"),
-                new Ads("DRUID", "KRA", "27", "KDH 049C", "KDH 049C", "31", "THIKA ROAD", 0, 0, false, true, "sim"),
+//                new Ads("FUNKADELICA", "KRA", "27", "KDK 983A", "KDK 983A", "31", "NGONG ROAD", 0, 0, false, true, "sim"),
+//                new Ads("BVB", "KRA", "27", "KDA 087L", "KDA 087L", "31", "JOGOO/OUTERING ROAD", 0, 0, false, true, "sim"),
+//                new Ads("G-UNIT", "KRA", "27", "KDN 267J", "KDN 267J", "31", "JOGOO/OUTERING ROAD", 0, 0, false, true, "sim"),
+//                new Ads("FORTUNE", "KRA", "27", "KDN 101K", "KDN 101K", "31", "NGONG ROAD", 0, 0, false, true, "sim"),
+//                new Ads("DRUID", "KRA", "27", "KDH 049C", "KDH 049C", "31", "THIKA ROAD", 0, 0, false, true, "sim"),
 //
 //                new Ads("BVB", "COOP_BANK_FLOWER", "24", "KDK 983A", "KDK 983A", "31", "NGONG ROAD", 0, 0, false, true, "sim"),
 //                new Ads("BUMAYE", "COOP_BANK_FLOWER", "24", "KDA 087L", "KDA 087L", "31", "NGONG ROAD", 0, 0, false, true, "sim"),
