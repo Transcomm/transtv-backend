@@ -86,16 +86,16 @@ public class ScheduleAdSim {
 //                new Ads("ISSACHAR", "COOP_BANK_DJ", "24", "KDN 101K", "KDN 101K", "31", "JOGOO ROAD", 0, 0, false, true, "sim"),
 //                new Ads("DROID", "COOP_BANK_DJ", "24", "KDH 049C", "KDH 049C", "31", "MOMBASA ROAD", 0, 0, false, true, "sim"),
 
-                new Ads("BVB", "CHROME TVC", "25", "KDK 983A", "KDK 983A", "31", "LANGATA ROAD", 0, 0, false, true, "sim"),
+                new Ads("STEAM PANK", "CHROME TVC", "25", "KDK 983A", "KDK 983A", "31", "LANGATA ROAD", 0, 0, false, true, "sim"),
                 new Ads("FORTUNE", "CHROME TVC", "25", "KDN 290K", "KDN 290K", "31", "LANGATA ROAD", 0, 0, false, true, "sim"),
                 new Ads("UNSTOPPABLE", "CHROME TVC", "25", "KDR 893A", "KDR 893A", "31", "WAIYAKI WAY", 0, 0, false, true, "sim"),
                 new Ads("EXPRESSO", "CHROME TVC", "25", "KDA 087L", "KDA 087L", "31", "NGONG/THIKA ROAD", 0, 0, false, true, "sim"),
-                new Ads("INTELLIGENCE", "CHROME TVC", "25", "KDQ 474T", "KDQ 474T", "31", "NGONG/THIKA ROAD", 0, 0, false, true, "sim"),
+                new Ads("JINX", "CHROME TVC", "25", "KDQ 474T", "KDQ 474T", "31", "NGONG/THIKA ROAD", 0, 0, false, true, "sim"),
                 new Ads("G-UNIT", "CHROME TVC", "25", "KDN 267J", "KDN 267J", "31", "KIAMBU ROAD", 0, 0, false, true, "sim"),
-                new Ads("FUNKADELICA", "CHROME TVC", "25", "KDK 983A", "KDK 983A", "31", "KIAMBU ROAD", 0, 0, false, true, "sim"),
+                new Ads("DICE", "CHROME TVC", "25", "KDK 983A", "KDK 983A", "31", "KIAMBU ROAD", 0, 0, false, true, "sim"),
                 new Ads("INVISIBLE", "CHROME TVC", "25", "KDN 101K", "KDN 101K", "31", "WAIYAKI WAY", 0, 0, false, true, "sim"),
                 new Ads("DRUID", "CHROME TVC", "25", "KDH 049C", "KDH 049C", "31", "MOMBASA ROAD", 0, 0, false, true, "sim"),
-                new Ads("ARGENTINA", "CHROME TVC", "25", "KDM 038D", "KDM 038D", "31", "MOMBASA ROAD", 0, 0, false, true, "sim")
+                new Ads("TEACHER", "CHROME TVC", "25", "KDM 038D", "KDM 038D", "31", "MOMBASA ROAD", 0, 0, false, true, "sim")
         );
 
         adsRepository.saveAll(dataList);
