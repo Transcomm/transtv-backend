@@ -24,11 +24,11 @@ public class ScheduleAdSim {
     public void executeTask() {
         List<Ads> dataList = Arrays.asList(
 
-//                new Ads("FUNKADELICA", "USIKIMYE", "26", "KDK 983A", "KDK 983A", "31", "NGONG ROAD", 0, 0, false, true, "sim"),
-//                new Ads("BVB", "USIKIMYE", "26", "KDA 087L", "KDA 087L", "31", "JOGOO/OUTERING ROAD", 0, 0, false, true, "sim"),
-//                new Ads("G-UNIT", "USIKIMYE", "26", "KDN 267J", "KDN 267J", "31", "JOGOO/OUTERING ROAD", 0, 0, false, true, "sim"),
-//                new Ads("FORTUNE", "USIKIMYE", "26", "KDN 101K", "KDN 101K", "31", "NGONG ROAD", 0, 0, false, true, "sim"),
-//                new Ads("DRUID", "USIKIMYE", "26", "KDH 049C", "KDH 049C", "31", "THIKA ROAD", 0, 0, false, true, "sim"),
+                new Ads("FUNKADELICA", "SHOWMAX TVC", "35", "KDK 983A", "KDK 983A", "31", "LANGATA ROAD", 0, 0, false, true, "sim"),
+                new Ads("BVB", "SHOWMAX TVC", "35", "KDA 087L", "KDA 087L", "31", "LANGATA ROAD", 0, 0, false, true, "sim"),
+                new Ads("G-UNIT", "SHOWMAX TVC", "35", "KDN 267J", "KDN 267J", "31", "JOGOO ROAD", 0, 0, false, true, "sim"),
+                new Ads("FORTUNE", "SHOWMAX TVC", "35", "KDN 101K", "KDN 101K", "31", "JOGOO ROAD", 0, 0, false, true, "sim"),
+                new Ads("DRUID", "SHOWMAX TVC", "35", "KDH 049C", "KDH 049C", "31", "THIKA ROAD", 0, 0, false, true, "sim"),
 
 //                new Ads("FUNKADELICA", "KRA", "27", "KDK 983A", "KDK 983A", "31", "NGONG ROAD", 0, 0, false, true, "sim"),
 //                new Ads("BVB", "KRA", "27", "KDA 087L", "KDA 087L", "31", "JOGOO/OUTERING ROAD", 0, 0, false, true, "sim"),
