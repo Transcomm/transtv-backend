@@ -29,21 +29,21 @@ public class ScheduleAdSim {
                 new Ads("G-UNIT", "CHOCO_MASTER", "38", "KDN 267J", "KDN 267J", "31", "RONGAI ROAD", 0, 0, false, true, "sim"),
                 new Ads("DICE", "CHOCO_MASTER", "38", "KDN 101K", "KDN 101K", "31", "JOGOO ROAD", 0, 0, false, true, "sim"),
                 new Ads("DRUID", "CHOCO_MASTER", "38", "KDH 049C", "KDH 049C", "31", "THIKA ROAD", 0, 0, false, true, "sim"),
-                new Ads("BIONIC", "CHOCO_MASTER", "31", "KDK 6I9G", "KDH 049C", "31", "JOGOO ROAD", 0, 0, false, true, "sim"),
+                new Ads("BIONIC", "CHOCO_MASTER", "38", "KDK 6I9G", "KDK 6I9G", "31", "JOGOO ROAD", 0, 0, false, true, "sim"),
 
                 new Ads("BABAYEGA", "PB_CRUNCHY", "38", "KDK 983A", "KDK 983A", "31", "THIKA ROAD", 0, 0, false, true, "sim"),
                 new Ads("BVB", "PB_CRUNCHY", "38", "KDA 087L", "KDA 087L", "31", "RONGAI ROAD", 0, 0, false, true, "sim"),
                 new Ads("G-UNIT", "PB_CRUNCHY", "38", "KDN 267J", "KDN 267J", "31", "RONGAI ROAD", 0, 0, false, true, "sim"),
                 new Ads("DICE", "PB_CRUNCHY", "38", "KDN 101K", "KDN 101K", "31", "JOGOO ROAD", 0, 0, false, true, "sim"),
                 new Ads("DRUID", "PB_CRUNCHY", "38", "KDH 049C", "KDH 049C", "31", "THIKA ROAD", 0, 0, false, true, "sim"),
-                new Ads("BIONIC", "PB_CRUNCHY", "31", "KDK 6I9G", "KDH 049C", "31", "JOGOO ROAD", 0, 0, false, true, "sim"),
+                new Ads("BIONIC", "PB_CRUNCHY", "38", "KDK 6I9G", "KDK 6I9G", "31", "JOGOO ROAD", 0, 0, false, true, "sim"),
 
                 new Ads("BABAYEGA", "CORE_ROLEX", "38", "KDK 983A", "KDK 983A", "31", "THIKA ROAD", 0, 0, false, true, "sim"),
                 new Ads("BVB", "CORE_ROLEX", "38", "KDA 087L", "KDA 087L", "31", "RONGAI ROAD", 0, 0, false, true, "sim"),
                 new Ads("G-UNIT", "CORE_ROLEX", "38", "KDN 267J", "KDN 267J", "31", "RONGAI ROAD", 0, 0, false, true, "sim"),
                 new Ads("DICE", "CORE_ROLEX", "38", "KDN 101K", "KDN 101K", "31", "JOGOO ROAD", 0, 0, false, true, "sim"),
                 new Ads("DRUID", "CORE_ROLEX", "38", "KDH 049C", "KDH 049C", "31", "THIKA ROAD", 0, 0, false, true, "sim"),
-                new Ads("BIONIC", "CORE_ROLEX", "31", "KDK 6I9G", "KDH 049C", "31", "JOGOO ROAD", 0, 0, false, true, "sim")
+                new Ads("BIONIC", "CORE_ROLEX", "38", "KDK 6I9G", "KDK 6I9G", "31", "JOGOO ROAD", 0, 0, false, true, "sim")
 
 //                new Ads("FUNKADELICA", "KRA", "27", "KDK 983A", "KDK 983A", "31", "NGONG ROAD", 0, 0, false, true, "sim"),
 //                new Ads("BVB", "KRA", "27", "KDA 087L", "KDA 087L", "31", "JOGOO/OUTERING ROAD", 0, 0, false, true, "sim"),
