@@ -20,34 +20,49 @@ public class ScheduleAdSim {
     private final AdsRepository adsRepository;
 
     // Scheduled to run at 15, 30, 45, and 00 minutes of each hour between 04:00 and 22:00
-//    @Scheduled(cron = "0 0,15,30,45 05-23 * * *")
-//    public void executeTask() {
-//        List<Ads> dataList = Arrays.asList(
+    @Scheduled(cron = "0 0,15,30,45 05-23 * * *")
+    public void executeTask() {
+        List<Ads> dataList = Arrays.asList(
+
+                new Ads("BABAYEGA", "CHOCO_MASTER", "38", "KDK 983A", "KDK 983A", "31", "THIKA ROAD", 0, 0, false, true, "sim"),
+                new Ads("BVB", "CHOCO_MASTER", "38", "KDA 087L", "KDA 087L", "31", "RONGAI ROAD", 0, 0, false, true, "sim"),
+                new Ads("G-UNIT", "CHOCO_MASTER", "38", "KDN 267J", "KDN 267J", "31", "RONGAI ROAD", 0, 0, false, true, "sim"),
+                new Ads("DICE", "CHOCO_MASTER", "38", "KDN 101K", "KDN 101K", "31", "JOGOO ROAD", 0, 0, false, true, "sim"),
+                new Ads("DRUID", "CHOCO_MASTER", "38", "KDH 049C", "KDH 049C", "31", "THIKA ROAD", 0, 0, false, true, "sim"),
+                new Ads("BIONIC", "CHOCO_MASTER", "31", "KDK 6I9G", "KDH 049C", "31", "JOGOO ROAD", 0, 0, false, true, "sim"),
+
+                new Ads("BABAYEGA", "PB_CRUNCHY", "38", "KDK 983A", "KDK 983A", "31", "THIKA ROAD", 0, 0, false, true, "sim"),
+                new Ads("BVB", "PB_CRUNCHY", "38", "KDA 087L", "KDA 087L", "31", "RONGAI ROAD", 0, 0, false, true, "sim"),
+                new Ads("G-UNIT", "PB_CRUNCHY", "38", "KDN 267J", "KDN 267J", "31", "RONGAI ROAD", 0, 0, false, true, "sim"),
+                new Ads("DICE", "PB_CRUNCHY", "38", "KDN 101K", "KDN 101K", "31", "JOGOO ROAD", 0, 0, false, true, "sim"),
+                new Ads("DRUID", "PB_CRUNCHY", "38", "KDH 049C", "KDH 049C", "31", "THIKA ROAD", 0, 0, false, true, "sim"),
+                new Ads("BIONIC", "PB_CRUNCHY", "31", "KDK 6I9G", "KDH 049C", "31", "JOGOO ROAD", 0, 0, false, true, "sim"),
+
+                new Ads("BABAYEGA", "CORE_ROLEX", "38", "KDK 983A", "KDK 983A", "31", "THIKA ROAD", 0, 0, false, true, "sim"),
+                new Ads("BVB", "CORE_ROLEX", "38", "KDA 087L", "KDA 087L", "31", "RONGAI ROAD", 0, 0, false, true, "sim"),
+                new Ads("G-UNIT", "CORE_ROLEX", "38", "KDN 267J", "KDN 267J", "31", "RONGAI ROAD", 0, 0, false, true, "sim"),
+                new Ads("DICE", "CORE_ROLEX", "38", "KDN 101K", "KDN 101K", "31", "JOGOO ROAD", 0, 0, false, true, "sim"),
+                new Ads("DRUID", "CORE_ROLEX", "38", "KDH 049C", "KDH 049C", "31", "THIKA ROAD", 0, 0, false, true, "sim"),
+                new Ads("BIONIC", "CORE_ROLEX", "31", "KDK 6I9G", "KDH 049C", "31", "JOGOO ROAD", 0, 0, false, true, "sim")
+
+//                new Ads("FUNKADELICA", "KRA", "27", "KDK 983A", "KDK 983A", "31", "NGONG ROAD", 0, 0, false, true, "sim"),
+//                new Ads("BVB", "KRA", "27", "KDA 087L", "KDA 087L", "31", "JOGOO/OUTERING ROAD", 0, 0, false, true, "sim"),
+//                new Ads("G-UNIT", "KRA", "27", "KDN 267J", "KDN 267J", "31", "JOGOO/OUTERING ROAD", 0, 0, false, true, "sim"),
+//                new Ads("FORTUNE", "KRA", "27", "KDN 101K", "KDN 101K", "31", "NGONG ROAD", 0, 0, false, true, "sim"),
+//                new Ads("DRUID", "KRA", "27", "KDH 049C", "KDH 049C", "31", "THIKA ROAD", 0, 0, false, true, "sim"),
 //
-////                new Ads("FUNKADELICA", "SHOWMAX TVC", "35", "KDK 983A", "KDK 983A", "31", "LANGATA ROAD", 0, 0, false, true, "sim"),
-////                new Ads("BVB", "SHOWMAX TVC", "35", "KDA 087L", "KDA 087L", "31", "LANGATA ROAD", 0, 0, false, true, "sim"),
-////                new Ads("G-UNIT", "SHOWMAX TVC", "35", "KDN 267J", "KDN 267J", "31", "JOGOO ROAD", 0, 0, false, true, "sim"),
-////                new Ads("FORTUNE", "SHOWMAX TVC", "35", "KDN 101K", "KDN 101K", "31", "JOGOO ROAD", 0, 0, false, true, "sim"),
-////                new Ads("DRUID", "SHOWMAX TVC", "35", "KDH 049C", "KDH 049C", "31", "THIKA ROAD", 0, 0, false, true, "sim"),
+//                new Ads("BVB", "COOP_BANK_FLOWER", "24", "KDK 983A", "KDK 983A", "31", "NGONG ROAD", 0, 0, false, true, "sim"),
+//                new Ads("BUMAYE", "COOP_BANK_FLOWER", "24", "KDA 087L", "KDA 087L", "31", "NGONG ROAD", 0, 0, false, true, "sim"),
+//                new Ads("G-UNIT", "COOP_BANK_FLOWER", "24", "KDN 267J", "KDN 267J", "31", "MOMBASA ROAD", 0, 0, false, true, "sim"),
+//                new Ads("ISSACHAR", "COOP_BANK_FLOWER", "24", "KDN 101K", "KDN 101K", "31", "JOGOO ROAD", 0, 0, false, true, "sim"),
+//                new Ads("DROID", "COOP_BANK_FLOWER", "24", "KDH 049C", "KDH 049C", "31", "MOMBASA ROAD", 0, 0, false, true, "sim"),
 //
-////                new Ads("FUNKADELICA", "KRA", "27", "KDK 983A", "KDK 983A", "31", "NGONG ROAD", 0, 0, false, true, "sim"),
-////                new Ads("BVB", "KRA", "27", "KDA 087L", "KDA 087L", "31", "JOGOO/OUTERING ROAD", 0, 0, false, true, "sim"),
-////                new Ads("G-UNIT", "KRA", "27", "KDN 267J", "KDN 267J", "31", "JOGOO/OUTERING ROAD", 0, 0, false, true, "sim"),
-////                new Ads("FORTUNE", "KRA", "27", "KDN 101K", "KDN 101K", "31", "NGONG ROAD", 0, 0, false, true, "sim"),
-////                new Ads("DRUID", "KRA", "27", "KDH 049C", "KDH 049C", "31", "THIKA ROAD", 0, 0, false, true, "sim"),
-////
-////                new Ads("BVB", "COOP_BANK_FLOWER", "24", "KDK 983A", "KDK 983A", "31", "NGONG ROAD", 0, 0, false, true, "sim"),
-////                new Ads("BUMAYE", "COOP_BANK_FLOWER", "24", "KDA 087L", "KDA 087L", "31", "NGONG ROAD", 0, 0, false, true, "sim"),
-////                new Ads("G-UNIT", "COOP_BANK_FLOWER", "24", "KDN 267J", "KDN 267J", "31", "MOMBASA ROAD", 0, 0, false, true, "sim"),
-////                new Ads("ISSACHAR", "COOP_BANK_FLOWER", "24", "KDN 101K", "KDN 101K", "31", "JOGOO ROAD", 0, 0, false, true, "sim"),
-////                new Ads("DROID", "COOP_BANK_FLOWER", "24", "KDH 049C", "KDH 049C", "31", "MOMBASA ROAD", 0, 0, false, true, "sim"),
-////
-////                new Ads("BVB", "COOP_BANK_DJ", "24", "KDK 983A", "KDK 983A", "31", "NGONG ROAD", 0, 0, false, true, "sim"),
-////                new Ads("BUMAYE", "COOP_BANK_DJ", "24", "KDA 087L", "KDA 087L", "31", "NGONG ROAD", 0, 0, false, true, "sim"),
-////                new Ads("G-UNIT", "COOP_BANK_DJ", "24", "KDN 267J", "KDN 267J", "31", "MOMBASA ROAD", 0, 0, false, true, "sim"),
-////                new Ads("ISSACHAR", "COOP_BANK_DJ", "24", "KDN 101K", "KDN 101K", "31", "JOGOO ROAD", 0, 0, false, true, "sim"),
-////                new Ads("DROID", "COOP_BANK_DJ", "24", "KDH 049C", "KDH 049C", "31", "MOMBASA ROAD", 0, 0, false, true, "sim"),
-//
+//                new Ads("BVB", "COOP_BANK_DJ", "24", "KDK 983A", "KDK 983A", "31", "NGONG ROAD", 0, 0, false, true, "sim"),
+//                new Ads("BUMAYE", "COOP_BANK_DJ", "24", "KDA 087L", "KDA 087L", "31", "NGONG ROAD", 0, 0, false, true, "sim"),
+//                new Ads("G-UNIT", "COOP_BANK_DJ", "24", "KDN 267J", "KDN 267J", "31", "MOMBASA ROAD", 0, 0, false, true, "sim"),
+//                new Ads("ISSACHAR", "COOP_BANK_DJ", "24", "KDN 101K", "KDN 101K", "31", "JOGOO ROAD", 0, 0, false, true, "sim"),
+//                new Ads("DROID", "COOP_BANK_DJ", "24", "KDH 049C", "KDH 049C", "31", "MOMBASA ROAD", 0, 0, false, true, "sim"),
+
 //                new Ads("BVB", "Demo TVC", "34", "KDK 983A", "KDK 983A", "31", "LANGATA ROAD", 0, 0, false, true, "sim"),
 //                new Ads("FORTUNE", "Demo TVC", "34", "KDN 290K", "KDN 290K", "31", "LANGATA ROAD", 0, 0, false, true, "sim"),
 //                new Ads("UNSTOPPABLE", "Demo TVC", "34", "KDR 893A", "KDR 893A", "31", "WAIYAKI WAY", 0, 0, false, true, "sim"),
@@ -58,11 +73,12 @@ public class ScheduleAdSim {
 //                new Ads("INVISIBLE", "Demo TVC", "34", "KDN 101K", "KDN 101K", "31", "WAIYAKI WAY", 0, 0, false, true, "sim"),
 //                new Ads("DRUID", "Demo TVC", "34", "KDH 049C", "KDH 049C", "31", "MOMBASA ROAD", 0, 0, false, true, "sim"),
 //                new Ads("ARGENTINA", "Demo TVC", "34", "KDM 038D", "KDM 038D", "31", "MOMBASA ROAD", 0, 0, false, true, "sim")
-//        );
-//
-//        adsRepository.saveAll(dataList);
-//        log.info("Data saved at: " + System.currentTimeMillis());
-//    }
+
+        );
+
+        adsRepository.saveAll(dataList);
+        log.info("Data saved at: " + System.currentTimeMillis());
+    }
 
 //    @Scheduled(cron = "0 0,15,30,45 18-23 * * *")
 //    public void executeTaskTwo() {
