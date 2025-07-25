@@ -43,7 +43,14 @@ public class ScheduleAdSim {
                 new Ads("G-UNIT", "CORE_ROLEX", "38", "KDN 267J", "KDN 267J", "31", "RONGAI ROAD", 0, 0, false, true, "sim"),
                 new Ads("DICE", "CORE_ROLEX", "38", "KDN 101K", "KDN 101K", "31", "JOGOO ROAD", 0, 0, false, true, "sim"),
                 new Ads("DRUID", "CORE_ROLEX", "38", "KDH 049C", "KDH 049C", "31", "THIKA ROAD", 0, 0, false, true, "sim"),
-                new Ads("BIONIC", "CORE_ROLEX", "38", "KDK 6I9G", "KDK 6I9G", "31", "JOGOO ROAD", 0, 0, false, true, "sim")
+                new Ads("BIONIC", "CORE_ROLEX", "38", "KDK 6I9G", "KDK 6I9G", "31", "JOGOO ROAD", 0, 0, false, true, "sim"),
+
+                new Ads("BABAYEGA", "Predator TVC", "40", "KDK 983A", "KDK 983A", "31", "THIKA ROAD", 0, 0, false, true, "sim"),
+                new Ads("BVB", "Predator TVC", "40", "KDA 087L", "KDA 087L", "31", "RONGAI ROAD", 0, 0, false, true, "sim"),
+                new Ads("G-UNIT", "Predator TVC", "40", "KDN 267J", "KDN 267J", "31", "RONGAI ROAD", 0, 0, false, true, "sim"),
+                new Ads("DICE", "Predator TVC", "40", "KDN 101K", "KDN 101K", "31", "JOGOO ROAD", 0, 0, false, true, "sim"),
+                new Ads("DRUID", "Predator TVC", "40", "KDH 049C", "KDH 049C", "31", "THIKA ROAD", 0, 0, false, true, "sim"),
+                new Ads("BIONIC", "Predator TVC", "40", "KDK 6I9G", "KDK 6I9G", "31", "JOGOO ROAD", 0, 0, false, true, "sim")
 
 //                new Ads("FUNKADELICA", "KRA", "27", "KDK 983A", "KDK 983A", "31", "NGONG ROAD", 0, 0, false, true, "sim"),
 //                new Ads("BVB", "KRA", "27", "KDA 087L", "KDA 087L", "31", "JOGOO/OUTERING ROAD", 0, 0, false, true, "sim"),
