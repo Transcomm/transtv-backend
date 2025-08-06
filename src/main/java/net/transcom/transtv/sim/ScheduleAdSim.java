@@ -50,7 +50,7 @@ public class ScheduleAdSim {
                 new Ads("G-UNIT", "Predator TVC", "40", "KDN 267J", "KDN 267J", "31", "RONGAI ROAD", 0, 0, false, true, "sim"),
                 new Ads("DICE", "Predator TVC", "40", "KDN 101K", "KDN 101K", "31", "JOGOO ROAD", 0, 0, false, true, "sim"),
                 new Ads("DRUID", "Predator TVC", "40", "KDH 049C", "KDH 049C", "31", "THIKA ROAD", 0, 0, false, true, "sim"),
-                new Ads("BIONIC", "Predator TVC", "40", "KDK 6I9G", "KDK 6I9G", "31", "JOGOO ROAD", 0, 0, false, true, "sim")
+                new Ads("BIONIC", "Predator TVC", "40", "KDK 6I9G", "KDK 6I9G", "31", "JOGOO ROAD", 0, 0, false, true, "sim"),
 
 //                new Ads("FUNKADELICA", "KRA", "27", "KDK 983A", "KDK 983A", "31", "NGONG ROAD", 0, 0, false, true, "sim"),
 //                new Ads("BVB", "KRA", "27", "KDA 087L", "KDA 087L", "31", "JOGOO/OUTERING ROAD", 0, 0, false, true, "sim"),
@@ -70,16 +70,16 @@ public class ScheduleAdSim {
 //                new Ads("ISSACHAR", "COOP_BANK_DJ", "24", "KDN 101K", "KDN 101K", "31", "JOGOO ROAD", 0, 0, false, true, "sim"),
 //                new Ads("DROID", "COOP_BANK_DJ", "24", "KDH 049C", "KDH 049C", "31", "MOMBASA ROAD", 0, 0, false, true, "sim"),
 
-//                new Ads("BVB", "Demo TVC", "34", "KDK 983A", "KDK 983A", "31", "LANGATA ROAD", 0, 0, false, true, "sim"),
-//                new Ads("FORTUNE", "Demo TVC", "34", "KDN 290K", "KDN 290K", "31", "LANGATA ROAD", 0, 0, false, true, "sim"),
-//                new Ads("UNSTOPPABLE", "Demo TVC", "34", "KDR 893A", "KDR 893A", "31", "WAIYAKI WAY", 0, 0, false, true, "sim"),
-//                new Ads("EXPRESSO", "Demo TVC", "34", "KDA 087L", "KDA 087L", "31", "NGONG/THIKA ROAD", 0, 0, false, true, "sim"),
-//                new Ads("INTELLIGENCE", "Demo TVC", "34", "KDQ 474T", "KDQ 474T", "31", "NGONG/THIKA ROAD", 0, 0, false, true, "sim"),
-//                new Ads("G-UNIT", "Demo TVC", "34", "KDN 267J", "KDN 267J", "31", "KIAMBU ROAD", 0, 0, false, true, "sim"),
-//                new Ads("FUNKADELICA", "Demo TVC", "34", "KDK 983A", "KDK 983A", "31", "KIAMBU ROAD", 0, 0, false, true, "sim"),
-//                new Ads("INVISIBLE", "Demo TVC", "34", "KDN 101K", "KDN 101K", "31", "WAIYAKI WAY", 0, 0, false, true, "sim"),
-//                new Ads("DRUID", "Demo TVC", "34", "KDH 049C", "KDH 049C", "31", "MOMBASA ROAD", 0, 0, false, true, "sim"),
-//                new Ads("ARGENTINA", "Demo TVC", "34", "KDM 038D", "KDM 038D", "31", "MOMBASA ROAD", 0, 0, false, true, "sim")
+                new Ads("BVB", "Omo TVC", "42", "KDK 983A", "KDK 983A", "31", "LANGATA ROAD", 0, 0, false, true, "sim"),
+                new Ads("FORTUNE", "Omo TVC", "42", "KDN 290K", "KDN 290K", "31", "LANGATA ROAD", 0, 0, false, true, "sim"),
+                new Ads("UNSTOPPABLE", "Omo TVC", "42", "KDR 893A", "KDR 893A", "31", "WAIYAKI WAY", 0, 0, false, true, "sim"),
+                new Ads("EXPRESSO", "Omo TVC", "42", "KDA 087L", "KDA 087L", "31", "NGONG/THIKA ROAD", 0, 0, false, true, "sim"),
+                new Ads("INTELLIGENCE", "Omo TVC", "42", "KDQ 474T", "KDQ 474T", "31", "NGONG/THIKA ROAD", 0, 0, false, true, "sim"),
+                new Ads("G-UNIT", "Omo TVC", "42", "KDN 267J", "KDN 267J", "31", "KIAMBU ROAD", 0, 0, false, true, "sim"),
+                new Ads("FUNKADELICA", "Omo TVC", "42", "KDK 983A", "KDK 983A", "31", "KIAMBU ROAD", 0, 0, false, true, "sim"),
+                new Ads("INVISIBLE", "Omo TVC", "42", "KDN 101K", "KDN 101K", "31", "WAIYAKI WAY", 0, 0, false, true, "sim"),
+                new Ads("DRUID", "Omo TVC", "42", "KDH 049C", "KDH 049C", "31", "MOMBASA ROAD", 0, 0, false, true, "sim"),
+                new Ads("ARGENTINA", "Omo TVC", "42", "KDM 038D", "KDM 038D", "31", "MOMBASA ROAD", 0, 0, false, true, "sim")
 
         );
 
