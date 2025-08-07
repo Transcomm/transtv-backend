@@ -72,16 +72,21 @@ public class ScheduleAdSim {
 
                 new Ads("BVB", "Sunlight TVC", "42", "KDK 983A", "KDK 983A", "31", "LANGATA ROAD", 0, 0, false, true, "sim"),
                 new Ads("FORTUNE", "Sunlight TVC", "42", "KDN 290K", "KDN 290K", "31", "LANGATA ROAD", 0, 0, false, true, "sim"),
-                new Ads("UNSTOPPABLE", "Sunlight TVC", "42", "KDR 893A", "KDR 893A", "31", "WAIYAKI WAY", 0, 0, false, true, "sim"),
+                new Ads("UNSTOPPABLE", "Sunlight TVC", "42", "KDR 893A", "KDR 893A", "31", "JOGOO RD", 0, 0, false, true, "sim"),
                 new Ads("EXPRESSO", "Sunlight TVC", "42", "KDA 087L", "KDA 087L", "31", "NGONG/THIKA ROAD", 0, 0, false, true, "sim"),
                 new Ads("INTELLIGENCE", "Sunlight TVC", "42", "KDQ 474T", "KDQ 474T", "31", "NGONG/THIKA ROAD", 0, 0, false, true, "sim"),
-                new Ads("G-UNIT", "Sunlight TVC", "42", "KDN 267J", "KDN 267J", "31", "KIAMBU ROAD", 0, 0, false, true, "sim"),
-                new Ads("FUNKADELICA", "Sunlight TVC", "42", "KDK 983A", "KDK 983A", "31", "KIAMBU ROAD", 0, 0, false, true, "sim"),
-                new Ads("INVISIBLE", "Sunlight TVC", "42", "KDN 101K", "KDN 101K", "31", "WAIYAKI WAY", 0, 0, false, true, "sim"),
+                new Ads("G-UNIT", "Sunlight TVC", "42", "KDN 267J", "KDN 267J", "31", "LANGATA ROAD", 0, 0, false, true, "sim"),
+                new Ads("FUNKADELICA", "Sunlight TVC", "42", "KDK 983A", "KDK 983A", "31", "MOMBASA ROAD", 0, 0, false, true, "sim"),
+                new Ads("INVISIBLE", "Sunlight TVC", "42", "KDN 101K", "KDN 101K", "31", "JOGOO RD", 0, 0, false, true, "sim"),
                 new Ads("DRUID", "Sunlight TVC", "42", "KDH 049C", "KDH 049C", "31", "MOMBASA ROAD", 0, 0, false, true, "sim"),
                 new Ads("ARGENTINA", "Sunlight TVC", "42", "KDM 038D", "KDM 038D", "31", "MOMBASA ROAD", 0, 0, false, true, "sim"),
-                new Ads("DICE", "Sunlight TVC", "42", "KDN 101K", "KDN 101K", "31", "Ngong Rd", 0, 0, false, true, "sim")
-        );
+                new Ads("DICE", "Sunlight TVC", "42", "KDN 101K", "KDN 101K", "31", "MOMBASA RD", 0, 0, false, true, "sim"),
+                new Ads("REVELATION", "Sunlight TVC", "42", "KCK 827W", "KCK 827W", "31", "NGONG RD", 0, 0, false, true, "sim"),
+                new Ads("AFTERMATH", "Sunlight TVC", "42", "KDK 619G", "KDK 619G", "31", "NGONG RD", 0, 0, false, true, "sim"),
+                new Ads("NO FEAR", "Sunlight TVC", "42", "KDK 983A", "KDK 983A", "31", "JOGOO RD", 0, 0, false, true, "sim"),
+                new Ads("ISAACHAR", "Sunlight TVC", "42", "KDQ 915A", "KDQ 915A", "31", "THIKA RD", 0, 0, false, true, "sim"),
+                new Ads("MILITIA", "Sunlight TVC", "42", "KDM 039D", "KDM 039D", "31", "JOGOO RD", 0, 0, false, true, "sim")
+                );
 
         adsRepository.saveAll(dataList);
         log.info("Data saved at: " + System.currentTimeMillis());
