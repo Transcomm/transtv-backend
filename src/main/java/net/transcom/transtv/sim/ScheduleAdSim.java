@@ -86,7 +86,11 @@ public class ScheduleAdSim {
                 new Ads("NO FEAR", "Sunlight TVC", "42", "KDK 983A", "KDK 983A", "31", "JOGOO RD", 0, 0, false, true, "sim"),
                 new Ads("ISAACHAR", "Sunlight TVC", "42", "KDQ 915A", "KDQ 915A", "31", "THIKA RD", 0, 0, false, true, "sim"),
                 new Ads("MILITIA", "Sunlight TVC", "42", "KDM 039D", "KDM 039D", "31", "JOGOO RD", 0, 0, false, true, "sim"),
-                new Ads("STEAMPUNK", "Sunlight TVC", "42", "KDA 087L", "KDA 087L", "31", "THIKA RD", 0, 0, false, true, "sim")
+                new Ads("STEAMPUNK", "Sunlight TVC", "42", "KDA 087L", "KDA 087L", "31", "THIKA RD", 0, 0, false, true, "sim"),
+                new Ads("CARTER IV", "Sunlight TVC", "42", "KDK 474T", "KDK 474T", "31", "THIKA RD", 0, 0, false, true, "sim"),
+                new Ads("SINACH", "Sunlight TVC", "42", "KBZ 611M", "KBZ 611M", "31", "MOMBASA ROAD", 0, 0, false, true, "sim"),
+                new Ads("SAVAGE", "Sunlight TVC", "42", "KCC 004F", "KCC 004F", "31", "THIKA RD", 0, 0, false, true, "sim")
+
                 );
 
         adsRepository.saveAll(dataList);
