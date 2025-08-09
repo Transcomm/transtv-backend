@@ -88,7 +88,7 @@ public class ScheduleAdSim {
                 new Ads("MILITIA", "Omo TVC", "42", "KDM 039D", "KDM 039D", "31", "JOGOO RD", 0, 0, false, true, "sim"),
                 new Ads("STEAMPUNK", "Omo TVC", "42", "KDA 087L", "KDA 087L", "31", "THIKA RD", 0, 0, false, true, "sim"),
                 new Ads("CARTER IV", "Omo TVC", "42", "KDK 474T", "KDK 474T", "31", "THIKA RD", 0, 0, false, true, "sim"),
-                new Ads("SINACH", "Omo TVC", "42", "KBZ 611M", "KBZ 611M", "31", "MOMBASA ROAD", 0, 0, false, true, "sim"),
+                new Ads("BIONIC", "Omo TVC", "42", "KDK O63K", "KDK O63K", "31", "MOMBASA ROAD", 0, 0, false, true, "sim"),
                 new Ads("SAVAGE", "Omo TVC", "42", "KCC 004F", "KCC 004F", "31", "THIKA RD", 0, 0, false, true, "sim"),
 
         new Ads("BVB", "Sunlight TVC", "42", "KDK 983A", "KDK 983A", "31", "LANGATA ROAD", 0, 0, false, true, "sim"),
@@ -109,7 +109,7 @@ public class ScheduleAdSim {
                 new Ads("MILITIA", "Sunlight TVC", "42", "KDM 039D", "KDM 039D", "31", "JOGOO RD", 0, 0, false, true, "sim"),
                 new Ads("STEAMPUNK", "Sunlight TVC", "42", "KDA 087L", "KDA 087L", "31", "THIKA RD", 0, 0, false, true, "sim"),
                 new Ads("CARTER IV", "Sunlight TVC", "42", "KDK 474T", "KDK 474T", "31", "THIKA RD", 0, 0, false, true, "sim"),
-                new Ads("SINACH", "Sunlight TVC", "42", "KBZ 611M", "KBZ 611M", "31", "MOMBASA ROAD", 0, 0, false, true, "sim"),
+                new Ads("BIONIC", "Sunlight TVC", "42", "KDK O63K", "KDK 063K", "31", "MOMBASA ROAD", 0, 0, false, true, "sim"),
                 new Ads("SAVAGE", "Sunlight TVC", "42", "KCC 004F", "KCC 004F", "31", "THIKA RD", 0, 0, false, true, "sim")
 
                 );
