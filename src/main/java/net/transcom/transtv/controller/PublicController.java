@@ -3,8 +3,10 @@ package net.transcom.transtv.controller;
 import lombok.RequiredArgsConstructor;
 import net.transcom.transtv.entities.Ads;
 import net.transcom.transtv.entities.Survey;
+import net.transcom.transtv.entities.SurveyResponse;
 import net.transcom.transtv.entities.WifiUserInfo;
 import net.transcom.transtv.services.AdsService;
+import net.transcom.transtv.services.SurveyResponseService;
 import net.transcom.transtv.services.SurveyService;
 import net.transcom.transtv.services.WifiUserInfoService;
 import org.springframework.http.ResponseEntity;
@@ -20,6 +22,7 @@ public class PublicController {
     private final AdsService adsService;
     private final WifiUserInfoService wifiUserInfoService;
     private final SurveyService surveyService;
+    private final SurveyResponseService surveyResponseService;
 
     @PostMapping("/ads")
     public ResponseEntity<Ads> saveAd(@RequestBody Ads ad){
@@ -34,6 +37,11 @@ public class PublicController {
     @PostMapping("/survey")
     public ResponseEntity<Survey> saveSurvey(@RequestBody Survey survey){
         return ResponseEntity.ok(surveyService.saveSurvey(survey));
+    }
+
+    @PostMapping("/survey/response")
+    public ResponseEntity<SurveyResponse> saveSurveyResponse(@RequestBody SurveyResponse survey){
+        return ResponseEntity.ok(surveyResponseService.saveResponse(survey));
     }
 
 }
