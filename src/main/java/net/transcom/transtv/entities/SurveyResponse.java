@@ -19,8 +19,6 @@ public class SurveyResponse {
     private String question2;
 
     @ElementCollection
-    @CollectionTable(name = "survey_preferences", joinColumns = @JoinColumn(name = "survey_id"))
-    @Column(name = "preference")
     private List<String> question3;
 
     private String question4;
