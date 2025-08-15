@@ -1,9 +1,12 @@
 package net.transcom.transtv.controller;
 
 import lombok.RequiredArgsConstructor;
+import net.transcom.transtv.dto.SurveyReportDTO;
 import net.transcom.transtv.dto.UserResponse;
 import net.transcom.transtv.entities.Ads;
+import net.transcom.transtv.entities.SurveyResponse;
 import net.transcom.transtv.services.AdsService;
+import net.transcom.transtv.services.SurveyResponseService;
 import net.transcom.transtv.services.UserService;
 import org.springframework.data.domain.Page;
 import org.springframework.http.ResponseEntity;
@@ -18,6 +21,7 @@ public class UserController {
 
     private final AdsService adsService;
     private final UserService userService;
+    private final SurveyResponseService surveyResponseService;
 
     @GetMapping
     public ResponseEntity<String> sayHello(){
@@ -71,6 +75,19 @@ public class UserController {
     @GetMapping("/adsvsdays")
     public ResponseEntity<List<Object[]>> getAdsvsDays(@RequestParam String status, @RequestParam String client){
         return ResponseEntity.ok(adsService.getAdsByDays(status, client));
+    }
+
+    @GetMapping("/survey/report")
+    public SurveyReportDTO getSurveyReport() {
+        return surveyResponseService.generateReport();
+    }
+
+    @GetMapping("/survey")
+    public ResponseEntity<Page<SurveyResponse>> getAllSurveyResponses(
+                                                    @RequestParam(defaultValue = "1") int page,
+                                                    @RequestParam(defaultValue = "10") int size) {
+        Page<SurveyResponse> responses = surveyResponseService.getAllResponses(page - 1, size);
+        return ResponseEntity.ok(responses);
     }
 
 }
