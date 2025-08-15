@@ -3,6 +3,7 @@ package net.transcom.transtv;
 import net.transcom.transtv.entities.Role;
 import net.transcom.transtv.entities.User;
 import net.transcom.transtv.repository.UserRepository;
+import net.transcom.transtv.services.impl.SurveyImportServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -17,6 +18,8 @@ public class TranstvApplication implements CommandLineRunner {
 
 	@Autowired
 	private UserRepository userRepository;
+	@Autowired
+	private SurveyImportServiceImpl surveyImportService;
 
 	public static void main(String[] args) {
 		SpringApplication.run(TranstvApplication.class, args);
@@ -36,6 +39,9 @@ public class TranstvApplication implements CommandLineRunner {
 
 			userRepository.save(user);
 		}
+
+		String filePath = "src/main/resources/dummy_survey_responses_with_timestamps.json";
+		surveyImportService.importFromJson(filePath);
 	}
 
 	@Bean
