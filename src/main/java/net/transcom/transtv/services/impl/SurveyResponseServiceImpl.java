@@ -33,46 +33,34 @@ public class SurveyResponseServiceImpl implements SurveyResponseService {
     }
 
     public SurveyReportDTO generateReport() {
-        List<SurveyResponse> responses = surveyResponseRepository.findAll();
-        long total = responses.size();
-
+        long total = surveyResponseRepository.count();
         if (total == 0) {
             return new SurveyReportDTO(Map.of(), Map.of(), Map.of(), Map.of(), Map.of());
         }
 
-        Map<String, Double> q1 = calculatePercentage(responses.stream()
-                .map(SurveyResponse::getQuestion1)
-                .collect(Collectors.toList()), total);
+        Map<String, Double> q1 = convert(surveyResponseRepository.getQuestion1Stats(), total);
+        Map<String, Double> q2 = convert(surveyResponseRepository.getQuestion2Stats(), total);
 
-        Map<String, Double> q2 = calculatePercentage(responses.stream()
-                .map(SurveyResponse::getQuestion2)
-                .collect(Collectors.toList()), total);
+        // Question 3: calculate based on total selections (not total responses)
+        List<Object[]> q3Stats = surveyResponseRepository.getQuestion3Stats();
+        long totalSelections = q3Stats.stream()
+                .mapToLong(row -> ((Number) row[1]).longValue())
+                .sum();
+        Map<String, Double> q3 = convert(q3Stats, totalSelections);
 
-        // Flatten question3 (list answers into one list)
-        List<String> q3List = responses.stream()
-                .flatMap(r -> r.getQuestion3().stream())
-                .collect(Collectors.toList());
-        Map<String, Double> q3 = calculatePercentage(q3List, total);
-
-        Map<String, Double> q4 = calculatePercentage(responses.stream()
-                .map(SurveyResponse::getQuestion4)
-                .collect(Collectors.toList()), total);
-
-        Map<String, Double> q5 = calculatePercentage(responses.stream()
-                .map(SurveyResponse::getQuestion5)
-                .collect(Collectors.toList()), total);
+        Map<String, Double> q4 = convert(surveyResponseRepository.getQuestion4Stats(), total);
+        Map<String, Double> q5 = convert(surveyResponseRepository.getQuestion5Stats(), total);
 
         return new SurveyReportDTO(q1, q2, q3, q4, q5);
     }
 
-    private Map<String, Double> calculatePercentage(List<String> answers, long total) {
-        return answers.stream()
-                .filter(Objects::nonNull)
-                .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
-                .entrySet().stream()
+    private Map<String, Double> convert(List<Object[]> stats, long divisor) {
+        if (divisor == 0) return Map.of();
+
+        return stats.stream()
                 .collect(Collectors.toMap(
-                        Map.Entry::getKey,
-                        e -> (e.getValue() * 100.0) / total
+                        row -> row[0] != null ? row[0].toString() : "Unknown",
+                        row -> (double) Math.round((Double.valueOf(row[1].toString()) * 100.0) / divisor * 1.0) // round to whole number
                 ));
     }
 

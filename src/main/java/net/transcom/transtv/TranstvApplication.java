@@ -18,8 +18,8 @@ public class TranstvApplication implements CommandLineRunner {
 
 	@Autowired
 	private UserRepository userRepository;
-	@Autowired
-	private SurveyImportServiceImpl surveyImportService;
+//	@Autowired
+//	private SurveyImportServiceImpl surveyImportService;
 
 	public static void main(String[] args) {
 		SpringApplication.run(TranstvApplication.class, args);
@@ -40,8 +40,8 @@ public class TranstvApplication implements CommandLineRunner {
 			userRepository.save(user);
 		}
 
-		String filePath = "src/main/resources/dummy_survey_responses_with_timestamps.json";
-		surveyImportService.importFromJson(filePath);
+//		String filePath = "src/main/resources/dummy_survey_responses_with_timestamps.json";
+//		surveyImportService.importFromJson(filePath);
 	}
 
 	@Bean
